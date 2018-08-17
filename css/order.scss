@@ -1,0 +1,36 @@
+body {
+  display: none;
+}
+
+li {
+  list-style: none;
+}
+
+.pyg_view {
+  #segmentedControl {
+    background-color: #fff;
+  }
+  .pyg_tab_content {
+    padding: 20px;
+    ul {
+      li {
+        border-bottom: 1px solid #e6e6e8;
+        padding: 15px;
+        background-color: #fff; // line-height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .o1 {
+          flex: 4;
+          span {
+            display: block;
+          }
+        }
+        .order_price {
+          color: red;
+          flex: 1;
+        }
+      }
+    }
+  }
+}

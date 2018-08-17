@@ -1,0 +1,60 @@
+body{
+  padding-top: 90px;
+}
+  .search_header{
+    height: 45px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: yellow;
+  }
+  .sort_bar{
+    height: 45px;
+    width: 100%;
+    position: fixed;
+    top: 45px;
+    left: 0;
+    display: flex;
+    background-color: hotpink;
+    a{
+      flex: 1;
+      text-align: center;
+      color: #000;
+      font-size: 16px;
+      line-height: 45px;
+    }
+  }
+  .pyg_view{
+    padding: 0 10px;
+    position: relative;
+    overflow: hidden;
+    ul{
+      li{
+        background-color: #fff;
+        a{
+          display: flex;
+          font-size: 14px;
+          .item_left{
+            flex: 1;
+            img{
+              width: 70%;
+              margin: 0 auto;
+            }
+          }
+          .item_right{
+            flex: 2;
+            overflow: hidden;
+            .goods_name{
+              overflow: hidden;
+              // 不要换行 flex布局当宽度超出父元素的宽度之后 会发生挤压
+              white-space: nowrap;
+              // 文字超出之后 让最后一个文字变成 ...
+              text-overflow: ellipsis;
+            }
+            .goods_price{}
+          }
+        }
+      }
+    }
+  }

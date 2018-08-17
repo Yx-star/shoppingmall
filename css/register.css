@@ -1,0 +1,33 @@
+.reg_form {
+  padding: 10px;
+  font-size: 14px;
+}
+
+.reg_form input {
+  font-size: 14px;
+}
+
+.reg_form .code-row {
+  position: relative;
+}
+
+.reg_form .code-row #code_btn {
+  position: absolute;
+  top: 0;
+  right: 5px;
+  width: auto;
+}
+
+.btn_tool {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px;
+}
+
+.btn_tool button {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 10px 0;
+}

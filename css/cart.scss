@@ -1,0 +1,136 @@
+body {
+  display: none;
+}
+
+@mixin ellipse($c) {
+  display: -webkit-box;
+  overflow: hidden;
+  white-space: normal !important;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  -webkit-line-clamp: $c;
+  -webkit-box-orient: vertical;
+}
+
+#delete_btn {
+  display: none;
+}
+
+//地址
+.pyg_view {
+  padding: 0 8px;
+}
+
+.address {
+  margin: 30px 0;
+  .addr_title {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  .addr_content {
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    span {
+      flex: 1;
+    }
+    .addr_des {
+      text-align: left;
+      flex: 20;
+      .ad_title {}
+      .ad_content {
+        font-size: 14px;
+        color: #666;
+      }
+    }
+  }
+}
+
+//订单总额
+.order {
+  margin-bottom: 30px;
+  .order_title {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  .order_content {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 10px 20px;
+    .o_price {}
+    .o_create {
+      color: red;
+    }
+    a {
+      color: #000;
+    }
+  }
+}
+
+//订单
+.pyg_cart {
+  margin-bottom: 30px;
+  .p_cart_title {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  .p_cart_content {
+    background-color: #fff;
+    ul {
+      li {
+        border-bottom: 1px solid #ccc;
+        padding: 10px 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .goods_chk {
+          flex: 1;
+          display: none;
+          justify-content: center;
+          align-items: center;
+          input {
+            position: static;
+          }
+        }
+        .goods_img {
+          flex: 1;
+        }
+        .goods_tool {
+          padding: 5px;
+          flex: 3;
+          .goods_name {
+            font-size: 14px;
+            color: #666;
+            @include ellipse(2);
+          }
+          .goods_nums {
+            margin-top: 35px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .mui-numbox {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+#pyg_body.edit_status {
+  #delete_btn {
+    display: block;
+  }
+  .goods_chk {
+    display: flex;
+  }
+  .mui-numbox {
+    display: block;
+  }
+}

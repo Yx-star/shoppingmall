@@ -1,0 +1,82 @@
+body {
+  display: none;
+}
+
+.pyg_view {
+  padding: 20px 15px;
+}
+
+.pyg_view .userinfo {
+  background-color: #fff;
+  margin-bottom: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 15px;
+}
+
+.pyg_view .userinfo .fa {
+  font-size: 30px;
+  margin-right: 15px;
+}
+
+.pyg_view .userinfo .user_wrap {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+.pyg_view .userinfo .user_wrap .user_email {
+  color: #666;
+}
+
+.pyg_view .order {
+  background-color: #fff;
+}
+
+.pyg_view .order .order_title {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.pyg_view .order .order_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.pyg_view .order .order_content a {
+  line-height: 30px;
+}
+
+.pyg_view .order .order_content a span {
+  font-size: 30px;
+}
+
+.pyg_view .pyg_pwd {
+  margin-bottom: 20px;
+}
+
+.pyg_view .pyg_contack {
+  margin-bottom: 20px;
+}
+
+.pyg_view .me_tool {
+  text-align: center;
+}
+
+.pyg_view .me_tool button {
+  height: 50px;
+  width: 80%;
+}

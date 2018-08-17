@@ -1,0 +1,99 @@
+@charset "UTF-8";
+body {
+  line-height: normal;
+}
+
+.pyg_view {
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.left {
+  width: 1rem;
+  overflow: hidden;
+}
+
+.left ul li {
+  font-size: .16rem;
+  text-align: center;
+  padding: .05rem 0;
+}
+
+.left ul .active {
+  background-color: #fff;
+  border-left: 3px solid #0094ff;
+}
+
+.right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.right .goods_group {
+  font-size: 0.14rem;
+}
+
+.right .goods_group .goods_title {
+  color: #0094ff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-right: 15px;
+}
+
+.right .goods_group .goods_title > span:nth-child(1) {
+  padding: 0.05rem;
+}
+
+.right .goods_group .goods_title > span:nth-child(2) {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 1px;
+  background-color: black;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.right .goods_group ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.right .goods_group ul li {
+  width: 33.33%;
+  text-align: center;
+}
+
+.right .goods_group ul li a {
+  color: #000;
+}
+
+.right .goods_group ul li a img {
+  width: 60%;
+  margin: 0 auto;
+}
+
+/* 
+  rem 屏幕适配
+  1 公式 动态的设置html的fontsize
+  2 设计稿=> 基础值 要适配的屏幕的宽度  fontsize
+      基础值=>100px
+      要适配的屏幕的宽度 当前的屏幕的宽度
+      设计稿 没有  宽度  375px
+      fontsize
+  3 可以加入一段js 来实现!!!!
+   */

@@ -1,0 +1,77 @@
+  body{
+    line-height: normal;
+  }
+
+  .pyg_view{
+    overflow: hidden;
+    display: flex;
+  }
+  .left{
+    width: 1rem;
+    overflow: hidden;
+    ul{
+      li{
+        font-size: .16rem;
+        text-align: center;
+        padding: .05rem 0;
+      }
+      .active{
+        background-color: #fff;
+        border-left: 3px solid #0094ff;
+      }
+    }
+  }
+  .right{
+    flex: 1;
+    overflow: hidden;
+    background-color: #fff;
+    .goods_group{
+      font-size: 0.14rem;
+      .goods_title{
+        color: #0094ff;
+        display: flex;
+        justify-content: space-between;
+        padding-right: 15px;
+        >span:nth-child(1){
+          padding: 0.05rem;
+        
+        }
+        >span:nth-child(2){
+          flex: 1;
+          height: 1px;
+          background-color: black;
+          // 控制子项在侧轴上的对齐方式 
+          align-self: center;
+        }
+      }
+      ul{
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        li{
+          width: 33.33%;
+          text-align: center;
+          a{
+            color: #000;
+            img{
+              width: 60%;
+              margin: 0 auto;
+            }
+            .goods_name{}
+          }
+        }
+      }
+    }
+  }
+
+  /* 
+  rem 屏幕适配
+  1 公式 动态的设置html的fontsize
+  2 设计稿=> 基础值 要适配的屏幕的宽度  fontsize
+      基础值=>100px
+      要适配的屏幕的宽度 当前的屏幕的宽度
+      设计稿 没有  宽度  375px
+      fontsize
+  3 可以加入一段js 来实现!!!!
+   */
+
